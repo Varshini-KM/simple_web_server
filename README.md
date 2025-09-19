@@ -2,7 +2,8 @@
 
 # Date:18.09.2025
 # AIM:
-To develop a simple webserver to serve html pages and display the configuration details of laptop.
+To develop a simple webserver to serve html pages and display the list of protocols in TCP/IP Protocol Suite.
+
 
 # DESIGN STEPS:
 ## Step 1:
@@ -21,7 +22,7 @@ Serving the HTML pages.
 Testing the webserver.
 
 # PROGRAM:
-'''
+```
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content ='''<!DOCTYPE html>
@@ -105,7 +106,7 @@ server_address = ('',8000)
 httpd = HTTPServer (server_address, MyServer)
 httpd.serve_forever()
 
-'''
+```
 # OUTPUT:
 ![alt text](<Screenshot 2025-09-18 231101.png>)
 
